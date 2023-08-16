@@ -1,0 +1,9 @@
+
+<div>
+    <input type="text" [formControl]="searchControl" placeholder="Search movies...">
+</div>
+
+<div  *ngFor="let movie of filteredMovies$ | async">
+<h1>{{movie.title}}</h1>
+</div>
+  
